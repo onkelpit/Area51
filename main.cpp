@@ -1,6 +1,5 @@
 #include "main.hpp"
 
-
 int main(int argc, char** argv)
 {
 	Human *h = new Human();
@@ -12,4 +11,3 @@ int main(int argc, char** argv)
 	delete c;
 	return(0);
 }
-

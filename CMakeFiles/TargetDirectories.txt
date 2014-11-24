@@ -1,0 +1,2 @@
+/home/pit/git/Area51/CMakeFiles/main.dir
+/home/pit/git/Area51/CMakeFiles/test.dir

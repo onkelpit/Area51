@@ -16,3 +16,4 @@ std::string Human::getName()
 {
 	return(name);
 }
+

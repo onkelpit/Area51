@@ -3,4 +3,4 @@ compiler:
   - gcc
   - clang
 # Change this to your needs
-script: cmake . &&  make main && ./bin/main && ./bin/test
+script: cmake . &&  make main && make tests && ./bin/main && ./bin/teststests

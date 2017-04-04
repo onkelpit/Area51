@@ -23,3 +23,4 @@ TEST_CASE( "Fact Human", "[factH]" ) {
 TEST_CASE( "PJ", "[test PJ]") {
 	REQUIRE( h.getName() == "Peter Johennecken");
 }
+

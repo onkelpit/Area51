@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 add_executable(area51 main.cpp src/Human.cpp)
+enable_testing()
 add_executable(area51_tests test.cpp src/Human.cpp)
+add_test(Tester area51_tests)
 install(FILES ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/area51 ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/area51_tests TYPE BIN PERMISSIONS WORLD_EXECUTE)

@@ -2,7 +2,7 @@
 
 Human::Human()
 {
-	name = "Peter Johennecken";
+	name = "foo bar";
 }
 
 Human::Human(std::string name)

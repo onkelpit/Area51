@@ -4,7 +4,7 @@
 
 Human h;
 
-BOOST_AUTO_TEST_CASE(test_PJ) {
-	BOOST_TEST( h.getName() == "Peter Johennecken");
+BOOST_AUTO_TEST_CASE(test_FB) {
+	BOOST_TEST( h.getName() == "foo bar");
 }
 

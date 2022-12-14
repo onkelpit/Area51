@@ -20,7 +20,7 @@ TEST_CASE( "Fact Human", "[factH]" ) {
 	REQUIRE( h.Factorial(3) == 6);
 }
 
-TEST_CASE( "PJ", "[test PJ]") {
-	REQUIRE( h.getName() == "Peter Johennecken");
+TEST_CASE( "fb", "[test FB]") {
+	REQUIRE( h.getName() == "foo bar");
 }
 

@@ -1,0 +1,21 @@
+#!/bin/sh
+# Yocto ptest runner for Area51
+# Each test binary is run in sequence; a non-zero exit stops the suite.
+
+PTEST_DIR=$(dirname "$0")
+
+run_test() {
+    NAME="$1"
+    BIN="$PTEST_DIR/$2"
+    if "$BIN"; then
+        echo "PASS: $NAME"
+    else
+        echo "FAIL: $NAME"
+        return 1
+    fi
+}
+
+run_test "CatchTests"           area51_tests
+run_test "BoostTest_Factorial"  test1
+run_test "BoostTest_HumanFactorial" test2
+run_test "BoostTest_HumanName"  test3

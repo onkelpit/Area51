@@ -1,4 +1,4 @@
-#define BOOST_TEST_MODULE test_module1
+#define BOOST_TEST_MODULE test_module2
 #include <boost/test/unit_test.hpp>
 #include "include/Human.hpp"
 

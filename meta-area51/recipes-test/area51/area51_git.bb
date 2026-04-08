@@ -2,8 +2,11 @@ SUMMARY = "Area51 – C++ demo application with ptest package"
 DESCRIPTION = "A small C++ application and its bundled Boost.Test/Catch2 \
 test suite, packaged for Yocto ptest integration."
 HOMEPAGE = "https://github.com/onkelpit/Area51"
+
+# The upstream repository does not yet contain a LICENSE file.
+# Add one to the repository and update LIC_FILES_CHKSUM accordingly.
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=00000000000000000000000000000000"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=<replace-with-actual-md5-of-LICENSE-file>"
 
 # ── Source ──────────────────────────────────────────────────────────────────
 SRC_URI = "git://github.com/onkelpit/Area51.git;protocol=https;branch=main"

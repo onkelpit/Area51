@@ -7,9 +7,12 @@ PTEST_DIR=$(dirname "$0")
 run_test() {
     NAME="$1"
     BIN="$PTEST_DIR/$2"
-    echo "PASS: $NAME" && "$BIN" && return 0
-    echo "FAIL: $NAME"
-    return 1
+    if "$BIN"; then
+        echo "PASS: $NAME"
+    else
+        echo "FAIL: $NAME"
+        return 1
+    fi
 }
 
 run_test "CatchTests"           area51_tests
